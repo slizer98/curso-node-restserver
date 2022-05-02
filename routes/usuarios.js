@@ -11,7 +11,8 @@ const {
 } = require('../controllers/usuarios');
 
 // const router = express.Router();
-const { Router } = require('express').Router();
+const { Router } = require('express');
+const router = Router();
 
 router.get('/', usuariosGet);
 
