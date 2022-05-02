@@ -10,7 +10,8 @@ const {
   usuariosPatch
 } = require('../controllers/usuarios');
 
-const router = express.Router();
+// const router = express.Router();
+const { Router } = require('express').Router();
 
 router.get('/', usuariosGet);
 
