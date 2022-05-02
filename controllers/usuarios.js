@@ -32,7 +32,6 @@ const usuariosPost = async (req, res) => {
     await usuario.save();
 
     res.json({
-        msg: 'post API - controlador',
         usuario
     })
 }

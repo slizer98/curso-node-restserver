@@ -1,6 +1,5 @@
-const express = require('express');
+
 const { check } = require('express-validator');
-const router = express.Router();
 const {validarCampos} = require('../middlewares/validar-campos');
 const { roleIsValid, emailExists, userExistsById } = require('../helpers/db-validators');
 const {
@@ -9,8 +8,9 @@ const {
   usuariosPost,
   usuariosDelete,
   usuariosPatch
-              } = require('../controllers/usuarios');
-              
+} = require('../controllers/usuarios');
+
+const router = express.Router();
 
 router.get('/', usuariosGet);
 
