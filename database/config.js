@@ -1,12 +1,13 @@
 const mongoose = require('mongoose');
 
-const dbconection = async() => {
+const dbconection = () => {
     try{
 
         mongoose.connect(process.env.MONGODB_CNN, {
             useNewUrlParser: true,
             useUnifiedTopology: true,
-            useFindAndModify: false
+            useFindAndModify: false,
+            useCreateIndex: true,
         });
 
     }catch(error){
