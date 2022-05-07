@@ -58,7 +58,7 @@ const usuariosDelete = async(req, res) => {
     // change status to false (logical deleted)
     const usuario = await Usuario.findByIdAndUpdate(id, {status: false}, {new: true});
     
-    res.status(201).json(usuario)
+    res.status(401).json(usuario);
 }
 
 const usuariosPatch = (req, res) => {
