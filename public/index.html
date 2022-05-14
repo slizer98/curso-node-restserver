@@ -33,7 +33,7 @@
       // gogole token : id_token
       // console.log('ID_TOKEN', response.credential)
       const body = {id_token: response.credential};
-      var url = window.location.hostname.includes('localhost') ? 'http://localhost:8080/api/auth/google' : 'https://restserver-emvr.herokuapp.com/api/auth/google';
+      var url = window.location.hostname.includes('localhost') ? 'http://localhost:8080/api/auth/google' : 'https://restserver-emvr.herokuapp.com';
       fetch(url, {
         method: 'POST',
         headers: {
