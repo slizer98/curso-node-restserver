@@ -45,7 +45,6 @@
         .then(res => {
           console.log(res)
           localStorage.setItem('email', res.usuario.email)
-          location.reload();
         })
         .catch(console.warn)
     }
